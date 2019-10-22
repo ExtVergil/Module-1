@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans';
+	font-size: 16px;
+	line-height: 38px;
+}
+img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+header {
+	width: 780px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #e5e5e5;
+	width: 100%;
+}
+.header > a {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 18px;
+	font-family: 'Open Sans';
+	text-decoration: none;
+	text-align: left;
+	font-weight: bold;
+	color: #333332;
+}
+.header h3 {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 12px;
+	font-family: 'Helvetica';
+}
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.header ul li {
+	float: left;
+}
+.header ul li a{
+	text-decoration: none;
+	color: rgba(69, 69, 69, 0.8);
+	font-size: 14px;
+	line-height: 24px;
+	padding: 10px;
+}
+.header ul li a:hover {
+	color: #000;
+	transition: 0.2s ease-out;
+}
+
+
+.slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 400px;
+}
+.slider__img {
+	background-image: url(../../img/slider.jpeg);
+	min-height: 500px;
+	background-size: cover;
+	background-position: 20% 70%;
+}
+.slider img {
+	margin-top: -280px;
+	margin-left: -5px;
+	width: 100%;
+}
+.slider__overlay {
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+}
+.slider__overlay > div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slider__text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	margin-top: 150px;
+}
+.slider__text h1 {
+	font-family: 'Domine';
+	font-size: 40px;
+	color: #fff;
+	text-shadow: 0px 2px 25px rgba(0, 0, 0, 0.3);
+	width: 100%;
+	margin: 0;
+}
+.slider__text p {
+	font-family: 'Helvetica';
+	font-size: 24px;
+	text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.15);
+	color: rgba(255, 255, 255, 0.8);
+	flex-wrap: wrap;
+	margin: 5px;
+}
+.slider__text p:hover {
+	color: #fff;
+}
+
+
+.main {
+	max-width: 1170px;
+	text-shadow: 0px 0px 50px 1px rgba(0,0,0,0.4);
+	margin-top: 80px;
+	margin-bottom: 80px;
+	background: #fff;
+	padding: 60px; 
+}
+.img {
+	color: #ababab;
+	font-family: 'Arial';
+	line-height: 26px;
+	margin: 30px 0px;
+}
+
+
+.footer {
+	color: #a6a6a6;
+	font-size: 13px;
+	padding: 25px 0;
+}
+.first-lvl {
+	background: rgba(0,0,0,0.85);
+	margin-top: -104px ;
+	height: 75px;
+}
+.color {
+	color: #fff;
+}
+.second-lvl {
+	background: rgba(0,0,0,0.9);
+	height: 75px;
+}
+.btn-twitter {
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	width: 40px;
+	height: 40px;
+	color: #a6a6a6;
+	border: 1px;
+	border-radius: 3px;
+	font-size: 18px;
+	background: #00b0ef;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+.btn-twitter:hover {
+	opacity: 1;
+	transition: 0.2s ease-out;
+}
+.btn-behance {
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	width: 40px;
+	height: 40px;
+	color: #a6a6a6;
+	border: 1px;
+	border-radius: 3px;
+	font-size: 18px;
+	background: #0066ff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+.btn-behance:hover {
+	opacity: 1;
+	transition: 0.2s ease-out;
+}
+.btn-dropbox {
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	width: 40px;
+	height: 40px;
+	color: #a6a6a6;
+	border: 1px;
+	border-radius: 3px;
+	font-size: 18px;
+	background: #0083d1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+.btn-dropbox:hover {
+	opacity: 1;
+	transition: 0.2s ease-out;
+}
+.btn-facebook {
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	width: 40px;
+	height: 40px;
+	color: #a6a6a6;
+	border: 1px;
+	border-radius: 3px;
+	font-size: 18px;
+	background: #265999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+.btn-facebook:hover {
+	opacity: 1;
+	transition: 0.2s ease-out;
+}
+.btn-rss {
+	text-decoration: none;
+	margin-right: 5px;
+	margin-bottom: 5px; 
+	width: 40px;
+	height: 40px;
+	color: #a6a6a6;
+	border: 1px;
+	border-radius: 3px;
+	font-size: 18px;
+	background: #ff7600;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0.9;
+}
+.btn-rss:hover {
+	opacity: 1;
+	transition: 0.2s ease-out;
+}
