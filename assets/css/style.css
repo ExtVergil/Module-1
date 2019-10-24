@@ -8,21 +8,39 @@ body {
 	font-family: 'Open Sans';
 	font-size: 16px;
 	line-height: 38px;
+	margin: 0;
+	padding: 0;
 }
 img {
 	width: 100%;
 	vertical-align: middle;
 }
-
-header {
+.container {
+	max-width: 780px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.header-container {
+	display: flex;
 	width: 780px;
+
+}
+header {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background: #e5e5e5;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+
 }
-.header > a {
+.logo {
 	color: rgba(0, 0, 0, 0.8);
+
+}
+.header a {
+	/*color: rgba(0, 0, 0, 0.8);*/
 	font-size: 18px;
 	font-family: 'Open Sans';
 	text-decoration: none;
@@ -30,15 +48,26 @@ header {
 	font-weight: bold;
 	color: #333332;
 }
-.header h3 {
-	color: rgba(0, 0, 0, 0.8);
+.header a:hover {
+	color: black;
+	transition: 0.2s ease-out;
+}
+.header p {
+	/*color: rgba(0, 0, 0, 0.8);*/
 	font-size: 12px;
 	font-family: 'Helvetica';
+	margin: 0 0;
 }
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
+}
+.menubar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
 }
 .header ul {
 	list-style: none;
@@ -121,37 +150,58 @@ header {
 
 
 .main {
-	max-width: 1170px;
-	text-shadow: 0px 0px 50px 1px rgba(0,0,0,0.4);
-	margin-top: 80px;
 	margin-bottom: 80px;
 	background: #fff;
-	padding: 60px; 
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.content{
+	padding: 60px;
+	text-shadow: 0px 0px 50px 1px rgba(0,0,0,0.4);
+}
+.fparagraph {
+	font-weight: bold;
 }
 .img {
 	color: #ababab;
 	font-family: 'Arial';
 	line-height: 26px;
 	margin: 30px 0px;
+	max-width: 780px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 
 .footer {
 	color: #a6a6a6;
 	font-size: 13px;
-	padding: 25px 0;
+	padding: 0 0;
 }
 .first-lvl {
 	background: rgba(0,0,0,0.85);
-	margin-top: -104px ;
-	height: 75px;
+	margin-top: -100px ;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btns {
+	display: flex;
+	flex-wrap: wrap;
 }
 .color {
 	color: #fff;
 }
 .second-lvl {
 	background: rgba(0,0,0,0.9);
-	height: 75px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
 }
 .btn-twitter {
 	text-decoration: none;
